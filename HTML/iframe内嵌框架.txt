@@ -1,0 +1,12 @@
+<iframe>常用属性：
+			  值			描述
+	framenorder 	0、1		规定是否显示框架周围的边框
+	name	        frame_name	规定iframe名称(在元素target属性中使用)
+	scrolling     	yes、no、auto	规定是否在iframe中显示滚动条
+	src		URL		规定在iframe中展示的文档的URL
+
+语法;
+	<body>
+		<iframe src="引用页面地址" name="框架标识名"
+		 frameborder="边框" scrolling="yes" />
+	</body>

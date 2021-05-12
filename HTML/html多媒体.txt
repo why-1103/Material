@@ -1,0 +1,44 @@
+<embed>标签：
+	<embed>播放音频：
+		<embed src="Friend.mp3(音频源)" width="200" height="200" autostart="true" //是否		自动播放 loop="true"//是否循环>
+		</embed>	
+	
+	<embed> 播放flash视频
+		<embed src="视频源" width="200" height="200" quality="high"//播放质量
+		PLUGINPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod
+		_Version=ShockwaveFlash"//自动下载插件地址>
+		</embed>
+
+<object>标签：
+	使用<object>标签给浏览器加载插件，通过加载的插件播放音频和视频
+	
+	<object>播放音频：
+		<object data="TroublesaFriend.mp3">
+			<pramae name="src" value="TroublesaFriend.mp3">
+			<pramae name="qutoplay" value="true">
+		</object>
+
+	<object>播放flash：
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"//id号
+		 width="300" height="300" 		codebase="http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0"
+	//设置自动下载标签地址>
+			<pramae name="movie" value="动画.swf">
+			<pramae name="play" value="true">
+			<pramae name="loop" value="true">
+			<pramae name="quality" value="high">
+		</object>
+
+<object>  <embed>嵌套
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"//id号
+		 width="300" height="300" 		codebase="http://active.macromedia.com/flash4/cabs/swflash.cab#version=4,0,0,0"
+	//设置自动下载标签地址>
+	<pramae name="movie" value="动画.swf">
+	<pramae name="play" value="true">
+	<pramae name="loop" value="true">
+	<pramae name="quality" value="high">
+	<embed src="视频源" width="200" height="200" quality="high"//播放质量
+		PLUGINPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod
+		_Version=ShockwaveFlash"//自动下载插件地址>
+	</embed>
+</object>

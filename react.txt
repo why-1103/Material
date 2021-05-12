@@ -1,0 +1,41 @@
+React.createClass({}） 定义组件类
+
+类名必须是大写字母开头 	html元素标签名为小写字母开头
+
+this.props.属性名  访问自定义组件标签属性	可用于传参
+
+getInitialState ：function () {} 定义状态
+
+handleClick:function (event) {}  定义捕获事件
+
+ getDefaultProps: function() {}  设置 props 默认值
+
+子组件定义（createClass）里无法访问state,要使用props传值
+
+React.PropTypes验证器  验证输入数据格式是否有效   ：
+	 propTypes: {
+    		title: React.PropTypes.string.isRequired,
+ 		 },
+
+setState设置状态 
+	  this.setState(function (state) {
+              			  return{count:this.state.count+1};
+            				});
+replaceState替换状态
+
+setProps设置属性
+
+replaceProps替换属性
+
+
+定义组件：1、使用函数，props向组件传递参数
+	function HelloMessage(props) {
+    		return <h1>Hello World!</h1>;
+	}
+
+	2、es6  class 继承React.Component:
+	class Welcome extends React.Component {
+  		render() {
+   		return <h1>Hello World!</h1>;
+  		}
+	}

@@ -1,0 +1,17 @@
+frameset框架集：
+	创建框架网页步骤：
+		创建各个子窗口对应的html文件
+		创建整个框架文件，分别引用子窗口文件
+
+	创建框架页面基本语法：
+		<frameset col="25%,50%" rows="50%,*" border="5">
+			<frame src="top.html" name="">
+		</frameset>
+		
+		*<frameset>不能与<body>同时使用，除非在<frameset>中使用<noframe>标签
+	常用属性：
+		name属性为元素target属性值
+		col,rows：规定某行或某列占据页面面积，一般不会同时出现//按竖向，横向分割
+		cols	值：pixels、%、*	描述框架集中列的数目和尺寸
+		rowss	值：pixels、%、*	描述框架集中行的数目和尺寸
+		frame:noresise="noresize"  大小不可变
